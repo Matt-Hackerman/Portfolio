@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Matthew Hackman's Portfolio</title>
+        <link rel="stylesheet" href="resources/main.css">
+        <link rel="stylesheet" href="resources/home.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div class="index-top">
+            <div class="line-top-start"></div>
+            <div class="prof-top-half"></div>
+            <div class="line-top-mid"></div>
+            <div class="line-top-filler-left"></div>
+            <div id="middle-fill-top" class="middle-filler"></div>
+            <div class="line-top-filler-right"></div>
+            <div class="line-top-end"></div>
+        </div>
+
+        <div class="index-bottom">
+            <div class="line-bottom-start"></div>
+            <div class="prof-bottom-half"></div>
+            <div class="line-bottom-mid"></div>
+            <div class="line-bottom-filler-left"></div>
+            <div id="middle-fill-bottom" class="middle-filler"></div>
+            <div class="line-bottom-filler-right"></div>
+            <div class="line-bottom-end"></div>
+        </div>
+
+        <div class="index-img">
+            <img src="images/matthew.jpg" alt="Matthew Hackman Image">
+        </div>
+
+        <div class="name-plate">
+            <h1>MATTHEW HACKMAN</h1>
+            <button id="show-full" class="view-me-btn">View More</button>
+        </div>
+
+        <iframe id="show-page" src="home.html" frameborder="0" class="iframe-con"></iframe>
+
+        <div class="nav-bar">
+            <div class="nav-items">
+                <button class="nav-btn active" value="home.html">About Me</button>
+                <button id="pro-btn" class="nav-btn" value="projects.html">Projects</button>
+                <button class="nav-btn" value="resume.html">Resume</button>
+                <div class="contact-me">
+                    <h1>Contact</h1>
+                    <div class="socials">
+                        <a href="https://github.com/Matt-Hackerman" class="social-links"><ion-icon name="logo-github"></ion-icon></a>
+                        <a href="mailto:matthackman916@gmail.com" class="social-links"><ion-icon name="mail-outline"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+            <div class="close-me">
+                <button id="show-cover" class="close-btn">View Less</button>
+            </div>
+            
+        </div>
+
+        <script src="resources/main.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

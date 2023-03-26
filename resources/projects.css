@@ -1,0 +1,56 @@
+.project-con {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 15% 15% 15% 15%;
+    grid-auto-rows: 30%;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    width:100%;
+    min-height: 100%;
+    padding: .5% 0;
+    overflow-y: scroll;
+}
+
+.project-item-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+
+}
+
+.pro-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-color: rgba(99, 89, 89, 0.2);
+    cursor: pointer;
+}
+
+.pro-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.pro-item:hover {
+    transform: scale(1.1);
+    transition: 300ms;
+}
+
+.pro-item a {
+    text-decoration: none;
+}
+
+.pro-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    font-size: 1.2vw;
+    font-family: sans-serif;
+    color: #a3a0a0;
+    text-align: center;
+}

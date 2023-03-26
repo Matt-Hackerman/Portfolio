@@ -1,0 +1,254 @@
+.nav-bar {
+    position: fixed;
+    top: 10%;
+    right: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 10%;
+    height: 80%;
+    background-color: #362f2f;
+    padding: 10px 5px;
+    z-index: 0;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 70%;
+}
+
+.nav-btn {
+    width: 100%;
+    height: 15%;
+    color: #a3a0a0;
+    font-size: 1vw;
+    border: none;
+    border-radius: 20px;
+    background-color: #525151;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    position: relative;
+    top: -4;
+    left: -4;
+    box-shadow: 4px 4px black;
+    transition: 300ms;
+}
+
+.nav-btn:active {
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+}
+
+.contact-me {
+    width: 100%;
+    height: 35%;
+    color: #a3a0a0;
+    font-size: 1vw;
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+    height: 20%;
+    margin: auto;
+}
+
+.social-links {
+    cursor: pointer;
+    font-size: 3vh;
+    text-decoration: none;
+    color: #a3a0a0;
+}
+
+.social-links:hover {
+    color: white;
+    transition: 300ms;
+}
+
+.close-me {
+    width: 100%;
+    height: 5%;
+}
+
+.close-btn {
+    width: 100%;
+    height: 100%;
+    color: #a3a0a0;
+    font-size: 1vw;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 10px;
+    background-color: #525151;
+}
+
+.close-btn:hover {
+    position: relative;
+    top: -4;
+    left: -4;
+    box-shadow: 4px 4px black;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.close-btn:active {
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+}
+
+.active {
+    position: relative;
+    top: -4;
+    left: -4;
+    box-shadow: 4px 4px black;
+}
+
+.about-con {
+    display: grid;
+    grid-template-areas: 
+    "name name name"
+    "about about about"
+    "hobbies exp education"
+    ;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 12% 28% 60%;
+    grid-column-gap: 5px;
+    width:100%;
+    height: 100%;
+    padding: 0 0 0 .05%;
+}
+
+.name {
+    grid-area: name;
+    width: 100%;
+    height: 100%;
+}
+
+.name h1 {
+    font-size: 3vw;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #a3a0a0;
+}
+
+.name h2 {
+    font-size: 2vw;
+    font-family: sans-serif;
+    color: #a3a0a0;
+}
+
+.about {
+    grid-area: about;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    margin: 0 0 40px 0;
+}
+
+.about h1 {
+    font-size: 1.7vw;
+    font-family: sans-serif;
+    color: #a3a0a0;
+    text-decoration: underline;
+}
+
+.about p {
+    font-size: 1.5vw;
+    font-family: sans-serif;
+    color: #a3a0a0;
+}
+
+.hobbies {
+    grid-area: hobbies;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+.hobbies h1 {
+    font-size: 1.7vw;
+    font-family: sans-serif;
+    color: #a3a0a0;
+    text-decoration: underline;
+}
+
+.hobbies h2 {
+    font-size: 1.5vw;
+    font-family: sans-serif;
+    color: #a3a0a0;
+    margin: 10px 0;
+}
+
+.hobbies p {
+    font-size: 1.3vw;
+    font-family: sans-serif;
+    color: #a3a0a0;
+}
+
+.exp {
+    grid-area: exp;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.exp h1 {
+    font-size: 1.7vw;
+    font-family: sans-serif;
+    color: #a3a0a0;
+    text-decoration: underline;
+}
+
+.exp h2 {
+    font-size: 1.5vw;
+    font-family: sans-serif;
+    color: #a3a0a0;
+    margin: 10px 0;
+}
+
+.exp p {
+    font-size: 1.3vw;
+    font-family: sans-serif;
+    color: #a3a0a0;
+}
+
+.education {
+    grid-area: education;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+.education h1 {
+    font-size: 1.7vw;
+    font-family: sans-serif;
+    color: #a3a0a0;
+    text-decoration: underline;
+}
+
+.education h2 {
+    font-size: 1.5vw;
+    font-family: sans-serif;
+    color: #a3a0a0;
+    margin: 10px 0;
+}
+
+.education p {
+    font-size: 1.3vw;
+    font-family: sans-serif;
+    color: #a3a0a0;
+}

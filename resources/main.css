@@ -1,0 +1,602 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #0f0f0f;
+}
+
+.index-top {
+    position: relative;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: #1b1b1b;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.index-bottom {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: #1b1b1b;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.line-top-start {
+    position: relative;
+    top: 98.1%;
+    height: 2%;
+    width: 33%;
+    background-color: #3d3c3c;
+}
+
+.prof-top-half {
+    position: fixed;
+    top: 18.1%;
+    left: 9%;
+    width: 24%;
+    height: 31%;
+    background-color: #3d3c3c;
+    border-radius: 50px 50px 0 0;
+    padding: 0 1%;
+}
+
+.line-top-mid {
+    position: relative;
+    top: 98.1%;
+    height: 2%;
+    width: 12%;
+    background-color: #3d3c3c;
+}
+
+.line-top-filler-left {
+    position: relative;
+    top: 98.1%;
+    left: -12%;
+    height: 2%;
+    width: 12%;
+}
+
+.line-top-filler-right {
+    position: relative;
+    top: 98.1%;
+    right: -12%;
+    height: 2%;
+    width: 12%;
+}
+
+.line-top-end {
+    position: relative;
+    top: 98.1%;
+    height: 2%;
+    width: 12%;
+    background-color: #3d3c3c;
+}
+
+.line-bottom-start {
+    position: relative;
+    top: -0.1;
+    height: 2%;
+    width: 33%;
+    background-color: #3d3c3c;
+}
+
+.prof-bottom-half {
+    position: fixed;
+    bottom: 18%;
+    left: 9%;
+    width: 24%;
+    height: 31%;
+    background-color: #3d3c3c;
+    border-radius: 0 0 50px 50px;
+    padding: 0 1%;
+}
+
+.line-bottom-mid {
+    position: relative;
+    top: -0.1;
+    height: 2%;
+    width: 12%;
+    background-color: #3d3c3c;
+}
+
+.line-bottom-filler-left {
+    position: relative;
+    top: -0.1%;
+    left: -12%;
+    height: 2%;
+    width: 12%;
+}
+
+.line-bottom-filler-right {
+    position: relative;
+    top: -0.1%;
+    right: -12%;
+    height: 2%;
+    width: 12%;
+}
+
+.middle-filler {
+    width: 19%;
+}
+
+.line-bottom-end {
+    position: relative;
+    top: -0.1%;
+    height: 2%;
+    width: 12%;
+    background-color: #3d3c3c;
+}
+
+.index-img {
+    position: fixed;
+    top: 20%;
+    left: 10%;
+    width: 22%;
+    height: 60%;
+    border-radius: 40px;
+    background-color: grey;
+    z-index: 2;
+}
+
+.index-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+}
+
+.name-plate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 41.9%;
+    left: 45%;
+    height: 20%;
+    width: 43%;
+    text-align: center;
+    z-index: 2;
+    
+}
+
+.view-me-btn {
+    width: 30%;
+    height: 20%;
+    color: #a3a0a0;
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 20px;
+    background-color: #3d3c3c;
+    transition: 300ms;
+}
+
+.view-me-btn:hover {
+    position: relative;
+    top: -4;
+    left: -4;
+    box-shadow: 4px 4px black;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.view-me-btn:active {
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+}
+
+.name-plate h1 {
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 5.4rem;
+    color: #888585;
+}
+
+.iframe-con {
+    position: fixed;
+    top: 10%;
+    left: 23.5%;
+    width: 65.7%;
+    height: 80%;
+    z-index: 1;
+}
+
+.hidden {
+    visibility: hidden;
+    width: 0 !important;
+    height: 0 !important;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////    MEDIAS    /////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media (min-width: 601px) and (max-width: 700px) {
+    .name-plate h1 {
+        font-family: sans-serif;
+        font-weight: 900;
+        font-size: 1.3rem;
+        color: #888585;
+    }
+
+    .view-me-btn {
+        width: 30%;
+        height: 20%;
+        color: #a3a0a0;
+        font-size: .7rem;
+        font-family: sans-serif;
+        border: none;
+        border-radius: 20px;
+        background-color: #3d3c3c;
+        transition: 300ms;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 800px) {
+    .name-plate h1 {
+        font-family: sans-serif;
+        font-weight: 900;
+        font-size: 1.5rem;
+        color: #888585;
+    }
+
+    .view-me-btn {
+        width: 30%;
+        height: 20%;
+        color: #a3a0a0;
+        font-size: .9rem;
+        font-family: sans-serif;
+        border: none;
+        border-radius: 20px;
+        background-color: #3d3c3c;
+        transition: 300ms;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 900px) {
+    .name-plate h1 {
+        font-family: sans-serif;
+        font-weight: 900;
+        font-size: 1.7rem;
+        color: #888585;
+    }
+
+    .view-me-btn {
+        width: 30%;
+        height: 20%;
+        color: #a3a0a0;
+        font-size: 1.1rem;
+        font-family: sans-serif;
+        border: none;
+        border-radius: 20px;
+        background-color: #3d3c3c;
+        transition: 300ms;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1000px) {
+    .name-plate h1 {
+        font-family: sans-serif;
+        font-weight: 900;
+        font-size: 1.9rem;
+        color: #888585;
+    }
+
+    .view-me-btn {
+        width: 30%;
+        height: 20%;
+        color: #a3a0a0;
+        font-size: 1.3rem;
+        font-family: sans-serif;
+        border: none;
+        border-radius: 20px;
+        background-color: #3d3c3c;
+        transition: 300ms;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1100px) {
+    .name-plate h1 {
+        font-family: sans-serif;
+        font-weight: 900;
+        font-size: 2.1rem;
+        color: #888585;
+    }
+
+    .view-me-btn {
+        width: 30%;
+        height: 20%;
+        color: #a3a0a0;
+        font-size: 1.5rem;
+        font-family: sans-serif;
+        border: none;
+        border-radius: 20px;
+        background-color: #3d3c3c;
+        transition: 300ms;
+    }
+}
+
+@media (min-width: 1101px) and (max-width: 1200px) {
+    .name-plate h1 {
+        font-family: sans-serif;
+        font-weight: 900;
+        font-size: 2.5rem;
+        color: #888585;
+    }
+
+    .view-me-btn {
+        width: 30%;
+        height: 20%;
+        color: #a3a0a0;
+        font-size: 1.7rem;
+        font-family: sans-serif;
+        border: none;
+        border-radius: 20px;
+        background-color: #3d3c3c;
+        transition: 300ms;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1300px) {
+    .name-plate h1 {
+        font-family: sans-serif;
+        font-weight: 900;
+        font-size: 2.6rem;
+        color: #888585;
+    }
+
+    .view-me-btn {
+        width: 30%;
+        height: 20%;
+        color: #a3a0a0;
+        font-size: 1.5rem;
+        font-family: sans-serif;
+        border: none;
+        border-radius: 20px;
+        background-color: #3d3c3c;
+        transition: 300ms;
+    }
+}
+
+@media (min-width: 1301px) and (max-width: 1400px) {
+    .name-plate h1 {
+        font-family: sans-serif;
+        font-weight: 900;
+        font-size: 2.9rem;
+        color: #888585;
+    }
+
+    .view-me-btn {
+        width: 30%;
+        height: 20%;
+        color: #a3a0a0;
+        font-size: 1.5rem;
+        font-family: sans-serif;
+        border: none;
+        border-radius: 20px;
+        background-color: #3d3c3c;
+        transition: 300ms;
+    }
+}
+
+@media (min-width: 1401px) and (max-width: 1500px) {
+    .name-plate h1 {
+        font-family: sans-serif;
+        font-weight: 900;
+        font-size: 3.1rem;
+        color: #888585;
+    }
+
+    .view-me-btn {
+        width: 30%;
+        height: 20%;
+        color: #a3a0a0;
+        font-size: 1.5rem;
+        font-family: sans-serif;
+        border: none;
+        border-radius: 20px;
+        background-color: #3d3c3c;
+        transition: 300ms;
+    }
+}
+
+@media (min-width: 1501px) and (max-width: 1600px) {
+    .name-plate h1 {
+        font-family: sans-serif;
+        font-weight: 900;
+        font-size: 3.3rem;
+        color: #888585;
+    }
+
+    .view-me-btn {
+        width: 30%;
+        height: 20%;
+        color: #a3a0a0;
+        font-size: 1.7rem;
+        font-family: sans-serif;
+        border: none;
+        border-radius: 20px;
+        background-color: #3d3c3c;
+        transition: 300ms;
+    }
+}
+
+@media (min-width: 1601px) and (max-width: 1700px) {
+    .name-plate h1 {
+        font-family: sans-serif;
+        font-weight: 900;
+        font-size: 3.5rem;
+        color: #888585;
+    }
+
+    .view-me-btn {
+        width: 30%;
+        height: 20%;
+        color: #a3a0a0;
+        font-size: 1.9rem;
+        font-family: sans-serif;
+        border: none;
+        border-radius: 20px;
+        background-color: #3d3c3c;
+        transition: 300ms;
+    }
+}
+
+@media (min-width: 1701px) and (max-width: 1800px) {
+    .name-plate h1 {
+        font-family: sans-serif;
+        font-weight: 900;
+        font-size: 3.7rem;
+        color: #888585;
+    }
+
+    .view-me-btn {
+        width: 30%;
+        height: 20%;
+        color: #a3a0a0;
+        font-size: 1.7rem;
+        font-family: sans-serif;
+        border: none;
+        border-radius: 20px;
+        background-color: #3d3c3c;
+        transition: 300ms;
+    }
+}
+
+@media (min-width: 1801px) and (max-width: 1900px) {
+    .name-plate h1 {
+        font-family: sans-serif;
+        font-weight: 900;
+        font-size: 3.9rem;
+        color: #888585;
+    }
+
+    .view-me-btn {
+        width: 30%;
+        height: 20%;
+        color: #a3a0a0;
+        font-size: 1.5rem;
+        font-family: sans-serif;
+        border: none;
+        border-radius: 20px;
+        background-color: #3d3c3c;
+        transition: 300ms;
+    }
+}
+
+@media (min-width: 1901px) and (max-width: 2000px) {
+    .name-plate h1 {
+        font-family: sans-serif;
+        font-weight: 900;
+        font-size: 4.1rem;
+        color: #888585;
+    }
+
+    .view-me-btn {
+        width: 30%;
+        height: 20%;
+        color: #a3a0a0;
+        font-size: 1.7rem;
+        font-family: sans-serif;
+        border: none;
+        border-radius: 20px;
+        background-color: #3d3c3c;
+        transition: 300ms;
+    }
+}
+
+@media (min-width: 2001px) and (max-width: 2100px) {
+    .name-plate h1 {
+        font-family: sans-serif;
+        font-weight: 900;
+        font-size: 4.3rem;
+        color: #888585;
+    }
+
+    .view-me-btn {
+        width: 30%;
+        height: 20%;
+        color: #a3a0a0;
+        font-size: 1.9rem;
+        font-family: sans-serif;
+        border: none;
+        border-radius: 20px;
+        background-color: #3d3c3c;
+        transition: 300ms;
+    }
+}
+
+@media (min-width: 2101px) and (max-width: 2200px) {
+    .name-plate h1 {
+        font-family: sans-serif;
+        font-weight: 900;
+        font-size: 4.5rem;
+        color: #888585;
+    }
+
+    .view-me-btn {
+        width: 30%;
+        height: 20%;
+        color: #a3a0a0;
+        font-size: 1.9rem;
+        font-family: sans-serif;
+        border: none;
+        border-radius: 20px;
+        background-color: #3d3c3c;
+        transition: 300ms;
+    }
+}
+
+@media (min-width: 2201px) and (max-width: 2300px) {
+    .name-plate h1 {
+        font-family: sans-serif;
+        font-weight: 900;
+        font-size: 4.7rem;
+        color: #888585;
+    }
+
+    .view-me-btn {
+        width: 30%;
+        height: 20%;
+        color: #a3a0a0;
+        font-size: 1.9rem;
+        font-family: sans-serif;
+        border: none;
+        border-radius: 20px;
+        background-color: #3d3c3c;
+        transition: 300ms;
+    }
+}
+
+@media (min-width: 2301px) and (max-width: 2400px) {
+    .name-plate h1 {
+        font-family: sans-serif;
+        font-weight: 900;
+        font-size: 4.9rem;
+        color: #888585;
+    }
+
+    .view-me-btn {
+        width: 30%;
+        height: 20%;
+        color: #a3a0a0;
+        font-size: 2rem;
+        font-family: sans-serif;
+        border: none;
+        border-radius: 20px;
+        background-color: #3d3c3c;
+        transition: 300ms;
+    }
+}
